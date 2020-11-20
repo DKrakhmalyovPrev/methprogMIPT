@@ -1,0 +1,48 @@
+﻿  Source.cpp
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): warning C4346: T::Tail: зависимое имя не является типом
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): message : укажите префикс "typename" для задания типа
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(48): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<T,ind>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,14): error C2923: TypeAt: "T::Tail" не является допустимым аргументом типа шаблон для параметра "T"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : см. объявление "T::Tail"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): warning C4346: TypeAt<T,ind>::res: зависимое имя не является типом
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): message : укажите префикс "typename" для задания типа
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): error C2061: синтаксическая ошибка: идентификатор "res"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(59,1): warning C4346: T::Head: зависимое имя не является типом
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(59,1): message : укажите префикс "typename" для задания типа
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(60): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<T,0>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(59,1): error C2061: синтаксическая ошибка: идентификатор "Head"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35,41): error C2039: "Tail": не является членом "Nulltype".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(8): message : см. объявление "Nulltype"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<A>::Tail>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<A>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<A,A>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<float,A,A>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<int,float,A,A>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(68): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Length<TypeList<int,int,float,A,A>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35,1): error C2065: Tail: необъявленный идентификатор
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35,31): error C2923: Length: "Tail" не является допустимым аргументом типа шаблон для параметра "T"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35,1): error C4596: value: недопустимое полное имя в объявлении члена
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(35,1): error C2065: value: необъявленный идентификатор
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,24): error C2039: "Tail": не является членом "Nulltype".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(8): message : см. объявление "Nulltype"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<TypeList<A>::Tail,0>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<TypeList<A>,1>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<TypeList<float,A>,2>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<TypeList<int,float,A>,3>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TypeAt<TypeList<int,int,float,A>,4>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): error C2065: Tail: необъявленный идентификатор
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,14): error C2923: TypeAt: "Tail" не является допустимым аргументом типа шаблон для параметра "T"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,1): error C4596: res: недопустимое полное имя в объявлении члена
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,8): error C2039: "res": не является членом "TypeAt<TypeList<A>::Tail,0>".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : см. объявление "TypeAt<TypeList<A>::Tail,0>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,8): error C2039: "res": не является членом "TypeAt<TypeList<A>,1>".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : см. объявление "TypeAt<TypeList<A>,1>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,8): error C2039: "res": не является членом "TypeAt<TypeList<float,A>,2>".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : см. объявление "TypeAt<TypeList<float,A>,2>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47,8): error C2039: "res": не является членом "TypeAt<TypeList<int,float,A>,3>".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(47): message : см. объявление "TypeAt<TypeList<int,float,A>,3>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70,44): error C2039: "res": не является членом "TypeAt<TypeList<int,int,float,A>,4>".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70): message : см. объявление "TypeAt<TypeList<int,int,float,A>,4>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70,48): error C2065: res: необъявленный идентификатор
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70,48): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "c"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(70,48): error C2065: c: необъявленный идентификатор

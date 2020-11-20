@@ -1,0 +1,85 @@
+﻿  Source.cpp
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(263,50): warning C4305: =: усечение из "double" в "T"
+          with
+          [
+              T=float
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(234,34): warning C4101: a: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(279,70): warning C4101: cj: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(274,38): warning C4101: cond: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(272,31): warning C4101: ic4: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(257,69): warning C4101: dtf: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(244,68): warning C4101: e: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(276,36): warning C4101: tr: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(277,37): warning C4101: fs: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(246,62): warning C4101: rp: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(261,65): warning C4101: lh: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(242,56): warning C4101: d: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(177,37): error C2039: "Head": не является членом "Nulltype".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\TypeList.h(6): message : см. объявление "Nulltype"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(188): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StaticDispatcher<Executor,BaseLhs,TypeList<>::Tail,TypesRhs>"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(181): message : во время компиляции функции-члена класс шаблон "void StaticDispatcher<Executor,BaseLhs,TypeList<Cat>::Tail,TypesRhs>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(188): message : выполняется компиляция ссылки на экземпляр шаблон функции "void StaticDispatcher<Executor,BaseLhs,TypeList<Cat>::Tail,TypesRhs>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(188): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StaticDispatcher<Executor,BaseLhs,TypeList<Cat>::Tail,TypesRhs>"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(181): message : во время компиляции функции-члена класс шаблон "void StaticDispatcher<Executor,BaseLhs,TypeList<Cat>,TypesRhs>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(188): message : выполняется компиляция ссылки на экземпляр шаблон функции "void StaticDispatcher<Executor,BaseLhs,TypeList<Cat>,TypesRhs>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(188): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StaticDispatcher<Executor,BaseLhs,TypeList<Cat>,TypesRhs>"
+          with
+          [
+              Executor=Meeting,
+              BaseLhs=Animal,
+              TypesRhs=TypeList<Dog,Cat>
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(181): message : во время компиляции функции-члена класс шаблон "void StaticDispatcher<Meeting,Animal,TypeList<Dog,Cat>,TypeList<Dog,Cat>>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              BaseLhs=Animal,
+              Executor=Meeting
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(305): message : выполняется компиляция ссылки на экземпляр шаблон функции "void StaticDispatcher<Meeting,Animal,TypeList<Dog,Cat>,TypeList<Dog,Cat>>::Go(BaseLhs *,BaseLhs *,Executor)"
+          with
+          [
+              BaseLhs=Animal,
+              Executor=Meeting
+          ]
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(305): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StaticDispatcher<Meeting,Animal,TypeList<Dog,Cat>,TypeList<Dog,Cat>>"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(177,1): error C2061: синтаксическая ошибка: идентификатор "Head"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(178,37): error C2039: "Tail": не является членом "Nulltype".
+C:\Users\Denis\source\repos\MethProg2\MethProg2\TypeList.h(6): message : см. объявление "Nulltype"
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(178,1): error C2061: синтаксическая ошибка: идентификатор "Tail"

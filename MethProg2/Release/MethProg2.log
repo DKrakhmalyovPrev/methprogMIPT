@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(401,34): warning C4101: a: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(424,69): warning C4101: dtf: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(415,70): warning C4101: md: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(411,68): warning C4101: e: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(413,62): warning C4101: rp: неиспользованная локальная переменная
+C:\Users\Denis\source\repos\MethProg2\MethProg2\Source.cpp(409,56): warning C4101: d: неиспользованная локальная переменная
+  Создание кода
+  10 of 16 functions (62.5%) were compiled, the rest were copied from previous compilation.
+    9 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  MethProg2.vcxproj -> C:\Users\Denis\source\repos\MethProg2\Release\MethProg2.exe
