@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="ABclasses.h" />
     <ClInclude Include="Dispatcher.h" />
+    <ClInclude Include="Functor.h" />
     <ClInclude Include="Hierarchy.h" />
     <ClInclude Include="Traits.h" />
     <ClInclude Include="TypeList.h" />

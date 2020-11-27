@@ -8,7 +8,26 @@
 #include "Traits.h"
 #include "Hierarchy.h"
 #include "Dispatcher.h"
+#include "Functor.h"
 
+
+int fun1(double i, int j)
+{
+    std::cout << i << " " << j << std::endl;
+    return i + (double)j;
+}
+
+
+class Bird
+{
+public:
+    std::string voice(int a, char c)
+    {
+        std::cout << a;
+        std::string tmp = "tell ";
+        return tmp + c;
+    }
+};
 
 int main()
 {
@@ -99,4 +118,23 @@ int main()
     // TypeList <dog, cat, catdog>
     // meet (d,d), (d,c), (d,cd), (c,c), (c,cd), (cd,cd)
     // 
+
+
+    functor<int(double, int)> f1(fun1);
+
+    f1(1.4, 10);
+
+    functor<int(double, int)> f2;
+
+    f2 = f1;
+
+    f2(2.22, 22);
+
+    functor <std::string(Bird, int, char)> f3 = &Bird::voice;
+
+    Bird br;
+
+    std::cout << f3(br, 23, 'e');
+
+    // Домашнее задание -- часть параметров передаётся при конструировании, часть -- при вызове
 }

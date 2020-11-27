@@ -207,6 +207,17 @@ void MeetCat(Animal* one, Animal* two)
     std::cout << "Meow Meow" << std::endl;
 }
 
+
+struct HashIndex
+{
+    size_t operator() (const std::pair<std::type_index, std::type_index>& pr) const
+    {
+        static std::hash<std::type_index> z;
+
+        return z(pr.first) * 31 + z(pr.second);
+    }
+};
+
 template
 <
     class BaseLhs,
@@ -218,7 +229,7 @@ class BasicDispatcher
 {
     using KeyType = std::pair<std::type_index, std::type_index>;
     using MappedType = CallbackType;
-    using MapType = std::map<KeyType, MappedType>;
+    using MapType = std::unordered_map<KeyType, MappedType, HashIndex>;
 
     MapType callbackMap;
 
@@ -227,18 +238,18 @@ public:
     template <class TypeLhs, class TypeRhs>
     void add(CallbackType fun)
     {
-        callbackMap[KeyType(std::type_index(typeid(TypeLhs)), std::type_index(typeid(TypeRhs)))] = fun;
+        callbackMap.emplace(KeyType(typeid(TypeLhs), typeid(TypeRhs)), fun);
     }
 
     template <class TypeLhs, class TypeRhs>
     void remove()
     {
-        callbackMap.erase(KeyType(std::type_index(typeid(TypeLhs)), std::type_index(typeid(TypeRhs))));
+        callbackMap.erase(KeyType(typeid(TypeLhs), typeid(TypeRhs)));
     }
 
     ResultType Go(BaseLhs* lhs, BaseRhs* rhs)
     {
-        KeyType k(std::type_index(typeid(*lhs)), std::type_index(typeid(*rhs)));
+        KeyType k(typeid(*lhs), typeid(*rhs));
         typename MapType::iterator it = callbackMap.find(k);
         if (it == callbackMap.end())
         {
